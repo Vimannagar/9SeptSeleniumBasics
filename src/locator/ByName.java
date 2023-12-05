@@ -24,5 +24,11 @@ public class ByName {
 		WebElement surname = driver.findElement(By.name("lastname"));
 		
 		surname.sendKeys("Corporate");
+		
+		WebElement email = driver.findElement(By.name("reg_email__"));
+		
+		email.sendKeys("abc@gmail.com");
+		
+		
 	}
 }

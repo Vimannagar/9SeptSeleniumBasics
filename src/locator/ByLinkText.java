@@ -14,9 +14,16 @@ WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.facebook.com/signup");
 		
-		WebElement privacyPolicyLink = driver.findElement(By.linkText("Privacy Policy"));	
+//		WebElement privacyPolicyLink = driver.findElement(By.linkText("Privacy Policy"));	
+//		
+//		privacyPolicyLink.click();
 		
-		privacyPolicyLink.click();
+		
+//		partial link text
+		
+		WebElement cookiesPolicy = driver.findElement(By.partialLinkText("Cookies P"));
+		
+		cookiesPolicy.click();
 	}
 
 }
