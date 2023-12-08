@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class HPRTCDropdown {
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 WebDriver driver = new ChromeDriver();
 		
@@ -27,6 +27,8 @@ WebDriver driver = new ChromeDriver();
 		System.out.println(text);
 		
 //		use of findElements method
+		
+		Thread.sleep(2000);
 		
 		
 		List<WebElement> allCities = driver.findElements(By.xpath("//*[@class='ui-menu-item']"));
