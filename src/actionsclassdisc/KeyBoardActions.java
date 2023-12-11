@@ -24,7 +24,11 @@ WebDriver driver = new ChromeDriver();
 		
 		act.sendKeys("Velocity").perform();
 		
-		act.sendKeys(Keys.TAB).sendKeys("Corporate").sendKeys(Keys.TAB).build().perform();
+		act.sendKeys(Keys.TAB)
+		.sendKeys("Corporate")
+		.sendKeys(Keys.TAB)
+		.sendKeys("9988776655")
+		.build().perform();
 		
 		
 		

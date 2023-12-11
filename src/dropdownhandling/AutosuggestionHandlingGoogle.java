@@ -26,6 +26,13 @@ public class AutosuggestionHandlingGoogle {
 		{
 			String textValue = element.getText();
 			
+			if(textValue.equals("selenium download"))
+			{
+				element.click();
+				
+				break;
+			}
+			
 			System.out.println(textValue);
 		}
 		
