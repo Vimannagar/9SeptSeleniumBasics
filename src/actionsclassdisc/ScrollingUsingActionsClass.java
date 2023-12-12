@@ -6,25 +6,24 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class MouseActions {
-
-//	mouse hover action
-
+public class ScrollingUsingActionsClass {
+	
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 
 		driver.manage().window().maximize();
-
-		driver.get("https://www.amazon.in/");
-
-		WebElement signIn = driver.findElement(By.xpath("//*[@id='nav-link-accountList']"));
-
-		Actions act = new Actions(driver);
-
-		act.moveToElement(signIn).perform();
 		
-		driver.findElement(By.xpath("//*[@id='nav-al-signin']//span[text()='Sign in']")).click();
-
+		driver.get("https://www.amazon.in/");
+		
+		WebElement element = driver.findElement(By.xpath("//*[text()='Best Sellers in Toys & Games']"));
+		
+		Actions act = new Actions(driver);
+		
+		
+		act.scrollToElement(element).perform();
+		
+		
+		
 	}
 
 }
