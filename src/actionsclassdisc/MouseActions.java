@@ -20,7 +20,7 @@ public class MouseActions {
 		WebElement signIn = driver.findElement(By.xpath("//*[@id='nav-link-accountList']"));
 
 		Actions act = new Actions(driver);
-
+		
 		act.moveToElement(signIn).perform();
 		
 		driver.findElement(By.xpath("//*[@id='nav-al-signin']//span[text()='Sign in']")).click();
