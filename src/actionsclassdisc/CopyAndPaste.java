@@ -1,5 +1,7 @@
 package actionsclassdisc;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -7,9 +9,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import utility.ScreenshotWithMethod;
+
 public class CopyAndPaste {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 WebDriver driver = new ChromeDriver();
 		
@@ -43,6 +47,10 @@ WebDriver driver = new ChromeDriver();
 		.keyUp(Keys.CONTROL)
 		.build().perform();
 		
+		
+		ScreenshotWithMethod swm = new ScreenshotWithMethod();
+		
+		swm.captureScreenshot(driver, "Facebook");
 		
 	}
 
