@@ -22,6 +22,11 @@ public class AutosuggestionHandlingGoogle {
 		
 		List<WebElement> searchResults = driver.findElements(By.xpath("//*[text()='selenium']"));
 		
+		
+		int totalNumberOfElementsLocated = searchResults.size();
+		
+		System.out.println("Total number of elements are "+totalNumberOfElementsLocated);
+		
 		for(WebElement element :searchResults)
 		{
 			String textValue = element.getText();
