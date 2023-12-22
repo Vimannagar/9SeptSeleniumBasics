@@ -24,14 +24,16 @@ WebDriver driver = new ChromeDriver();
 		
 		driver.navigate().refresh();
 		
-		WebElement dailyNeeds = driver.findElement(By.xpath("//*[@alt='Daily essentials']"));
-		
-//	applying fluent wait
+//		applying fluent wait
 		
 		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 										.pollingEvery(Duration.ofSeconds(1))
 										.withTimeout(Duration.ofSeconds(60))
 										.ignoring(NoSuchElementException.class);
+
+		
+		WebElement dailyNeeds = driver.findElement(By.xpath("//*[@alt='Daily essentials']"));
+		
 				
 		
 		wait.until(ExpectedConditions.visibilityOf(dailyNeeds));

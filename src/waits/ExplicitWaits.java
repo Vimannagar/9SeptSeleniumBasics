@@ -21,6 +21,7 @@ public class ExplicitWaits {
 		driver.get("https://chercher.tech/practice/explicit-wait-sample-selenium-webdriver");
 		
 		driver.findElement(By.xpath("//*[@id='enable-button']")).click();
+		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		
 //		handling enable condition of button
