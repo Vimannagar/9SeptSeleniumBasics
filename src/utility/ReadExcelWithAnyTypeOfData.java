@@ -33,6 +33,29 @@ public class ReadExcelWithAnyTypeOfData {
 		System.out.println(data);
 		
 		
+		for(int i=0; i<45; i++)
+		{
+			String value = df.formatCellValue(sh1.getRow(i).getCell(1));
+			
+			System.out.println(value);
+		}
+		
+		
+//		To get the number of rows available inside the excel sheet
+		
+	int totalNumberOfRows = sh1.getLastRowNum();
+	
+	System.out.println("Total number of rows are "+totalNumberOfRows);//Total number of rows are 44
+	
+	int actualRowCount = totalNumberOfRows +1;
+	
+	System.out.println("Actual number of rows are "+actualRowCount);//45
+	
+//	To get the number of columns available inside the excel sheet
+	
+	int columnCount = sh1.getRow(0).getLastCellNum();
+	
+	System.out.println(columnCount);
 
 	}
 	
