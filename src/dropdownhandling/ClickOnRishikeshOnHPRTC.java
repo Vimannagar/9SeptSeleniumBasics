@@ -41,7 +41,7 @@ public class ClickOnRishikeshOnHPRTC {
 						break;
 					}
 					
-					System.out.println(cityname);
+					
 				}
 			
 				

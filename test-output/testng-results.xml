@@ -1,29 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-27T09:29:43 IST" name="Default suite" finished-at="2023-12-27T09:29:43 IST" duration-ms="186">
+  <suite started-at="2023-12-29T09:29:28 IST" name="9 Sept" finished-at="2023-12-29T09:29:28 IST" duration-ms="204">
     <groups>
     </groups>
-    <test started-at="2023-12-27T09:29:43 IST" name="Default test" finished-at="2023-12-27T09:29:43 IST" duration-ms="186">
-      <class name="testngdiscussion.FacebookTestCase">
-        <test-method signature="home()[pri:0, instance:testngdiscussion.FacebookTestCase@156b88f5]" started-at="2023-12-27T09:29:43 IST" name="home" finished-at="2023-12-27T09:29:43 IST" duration-ms="18" status="PASS">
+    <test started-at="2023-12-29T09:29:28 IST" name="Morning" finished-at="2023-12-29T09:29:28 IST" duration-ms="204">
+      <class name="testngdiscussion.LoginPage">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testngdiscussion.LoginPage@f0da945]" started-at="2023-12-29T09:29:28 IST" name="beforeClass" finished-at="2023-12-29T09:29:28 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- home -->
-        <test-method signature="login()[pri:0, instance:testngdiscussion.FacebookTestCase@156b88f5]" started-at="2023-12-27T09:29:43 IST" name="login" finished-at="2023-12-27T09:29:43 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method signature="getTitle()[pri:0, instance:testngdiscussion.LoginPage@f0da945]" started-at="2023-12-29T09:29:28 IST" name="getTitle" finished-at="2023-12-29T09:29:28 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="logout()[pri:0, instance:testngdiscussion.FacebookTestCase@156b88f5]" started-at="2023-12-27T09:29:43 IST" name="logout" finished-at="2023-12-27T09:29:43 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- getTitle -->
+        <test-method signature="loginToApp()[pri:0, instance:testngdiscussion.LoginPage@f0da945]" started-at="2023-12-29T09:29:28 IST" name="loginToApp" finished-at="2023-12-29T09:29:28 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="profile()[pri:0, instance:testngdiscussion.FacebookTestCase@156b88f5]" started-at="2023-12-27T09:29:43 IST" name="profile" finished-at="2023-12-27T09:29:43 IST" duration-ms="13" status="PASS">
+        </test-method> <!-- loginToApp -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testngdiscussion.LoginPage@f0da945]" started-at="2023-12-29T09:29:28 IST" name="afterClass" finished-at="2023-12-29T09:29:28 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- profile -->
-      </class> <!-- testngdiscussion.FacebookTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testngdiscussion.LoginPage@f0da945]" started-at="2023-12-29T09:29:28 IST" name="afterTest" finished-at="2023-12-29T09:29:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testngdiscussion.LoginPage -->
+      <class name="testngdiscussion.HomePageTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testngdiscussion.HomePageTest@31fa1761]" started-at="2023-12-29T09:29:28 IST" name="beforeTest" finished-at="2023-12-29T09:29:28 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="validateCarousel()[pri:0, instance:testngdiscussion.HomePageTest@31fa1761]" started-at="2023-12-29T09:29:28 IST" name="validateCarousel" finished-at="2023-12-29T09:29:28 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCarousel -->
+        <test-method signature="verifyUrl()[pri:0, instance:testngdiscussion.HomePageTest@31fa1761]" started-at="2023-12-29T09:29:28 IST" name="verifyUrl" finished-at="2023-12-29T09:29:28 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUrl -->
+      </class> <!-- testngdiscussion.HomePageTest -->
+      <class name="waits.TestCase">
+        <test-method signature="testCase1()[pri:0, instance:waits.TestCase@957e06]" started-at="2023-12-29T09:29:28 IST" name="testCase1" finished-at="2023-12-29T09:29:28 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method signature="testCase2()[pri:0, instance:waits.TestCase@957e06]" started-at="2023-12-29T09:29:28 IST" name="testCase2" finished-at="2023-12-29T09:29:28 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+      </class> <!-- waits.TestCase -->
+    </test> <!-- Morning -->
+  </suite> <!-- 9 Sept -->
 </testng-results>
