@@ -1,57 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="2" failed="1" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-29T09:29:28 IST" name="9 Sept" finished-at="2023-12-29T09:29:28 IST" duration-ms="204">
+  <suite started-at="2023-12-30T09:30:05 IST" name="Suite" finished-at="2023-12-30T09:30:05 IST" duration-ms="197">
     <groups>
     </groups>
-    <test started-at="2023-12-29T09:29:28 IST" name="Morning" finished-at="2023-12-29T09:29:28 IST" duration-ms="204">
-      <class name="testngdiscussion.LoginPage">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testngdiscussion.LoginPage@f0da945]" started-at="2023-12-29T09:29:28 IST" name="beforeClass" finished-at="2023-12-29T09:29:28 IST" duration-ms="1" status="PASS">
+    <test started-at="2023-12-30T09:30:05 IST" name="Test" finished-at="2023-12-30T09:30:05 IST" duration-ms="197">
+      <class name="testngdiscussion.DependsOnMethodKeyword">
+        <test-method signature="login()[pri:1, instance:testngdiscussion.DependsOnMethodKeyword@383bfa16]" started-at="2023-12-30T09:30:05 IST" name="login" finished-at="2023-12-30T09:30:05 IST" duration-ms="15" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Failing login test case]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Failing login test case
+at testngdiscussion.DependsOnMethodKeyword.login(DependsOnMethodKeyword.java:13)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="getTitle()[pri:0, instance:testngdiscussion.LoginPage@f0da945]" started-at="2023-12-29T09:29:28 IST" name="getTitle" finished-at="2023-12-29T09:29:28 IST" duration-ms="13" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="home()[pri:2, instance:testngdiscussion.DependsOnMethodKeyword@383bfa16]" started-at="2023-12-30T09:30:05 IST" name="home" finished-at="2023-12-30T09:30:05 IST" depends-on-methods="testngdiscussion.DependsOnMethodKeyword.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependsOnMethodKeyword.home()[pri:2, instance:testngdiscussion.DependsOnMethodKeyword@383bfa16] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependsOnMethodKeyword.home()[pri:2, instance:testngdiscussion.DependsOnMethodKeyword@383bfa16] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTitle -->
-        <test-method signature="loginToApp()[pri:0, instance:testngdiscussion.LoginPage@f0da945]" started-at="2023-12-29T09:29:28 IST" name="loginToApp" finished-at="2023-12-29T09:29:28 IST" duration-ms="13" status="PASS">
+        </test-method> <!-- home -->
+        <test-method signature="profile()[pri:3, instance:testngdiscussion.DependsOnMethodKeyword@383bfa16]" started-at="2023-12-30T09:30:05 IST" name="profile" finished-at="2023-12-30T09:30:05 IST" depends-on-methods="testngdiscussion.DependsOnMethodKeyword.login, testngdiscussion.DependsOnMethodKeyword.home" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependsOnMethodKeyword.profile()[pri:3, instance:testngdiscussion.DependsOnMethodKeyword@383bfa16] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependsOnMethodKeyword.profile()[pri:3, instance:testngdiscussion.DependsOnMethodKeyword@383bfa16] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testngdiscussion.LoginPage@f0da945]" started-at="2023-12-29T09:29:28 IST" name="afterClass" finished-at="2023-12-29T09:29:28 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- profile -->
+        <test-method signature="logout()[pri:4, instance:testngdiscussion.DependsOnMethodKeyword@383bfa16]" started-at="2023-12-30T09:30:05 IST" name="logout" finished-at="2023-12-30T09:30:05 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testngdiscussion.LoginPage@f0da945]" started-at="2023-12-29T09:29:28 IST" name="afterTest" finished-at="2023-12-29T09:29:28 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- logout -->
+      </class> <!-- testngdiscussion.DependsOnMethodKeyword -->
+      <class name="testngdiscussion.DependsOnMethod2">
+        <test-method signature="logout()[pri:0, instance:testngdiscussion.DependsOnMethod2@614ca7df]" started-at="2023-12-30T09:30:05 IST" name="logout" finished-at="2023-12-30T09:30:05 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testngdiscussion.LoginPage -->
-      <class name="testngdiscussion.HomePageTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testngdiscussion.HomePageTest@31fa1761]" started-at="2023-12-29T09:29:28 IST" name="beforeTest" finished-at="2023-12-29T09:29:28 IST" duration-ms="18" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method signature="validateTitleOfPage()[pri:0, instance:testngdiscussion.DependsOnMethod2@614ca7df]" started-at="2023-12-30T09:30:05 IST" name="validateTitleOfPage" finished-at="2023-12-30T09:30:05 IST" depends-on-methods="testngdiscussion.DependsOnMethodKeyword.profile" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependsOnMethod2.validateTitleOfPage()[pri:0, instance:testngdiscussion.DependsOnMethod2@614ca7df] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependsOnMethod2.validateTitleOfPage()[pri:0, instance:testngdiscussion.DependsOnMethod2@614ca7df] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="validateCarousel()[pri:0, instance:testngdiscussion.HomePageTest@31fa1761]" started-at="2023-12-29T09:29:28 IST" name="validateCarousel" finished-at="2023-12-29T09:29:28 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCarousel -->
-        <test-method signature="verifyUrl()[pri:0, instance:testngdiscussion.HomePageTest@31fa1761]" started-at="2023-12-29T09:29:28 IST" name="verifyUrl" finished-at="2023-12-29T09:29:28 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUrl -->
-      </class> <!-- testngdiscussion.HomePageTest -->
-      <class name="waits.TestCase">
-        <test-method signature="testCase1()[pri:0, instance:waits.TestCase@957e06]" started-at="2023-12-29T09:29:28 IST" name="testCase1" finished-at="2023-12-29T09:29:28 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method signature="testCase2()[pri:0, instance:waits.TestCase@957e06]" started-at="2023-12-29T09:29:28 IST" name="testCase2" finished-at="2023-12-29T09:29:28 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase2 -->
-      </class> <!-- waits.TestCase -->
-    </test> <!-- Morning -->
-  </suite> <!-- 9 Sept -->
+        </test-method> <!-- validateTitleOfPage -->
+      </class> <!-- testngdiscussion.DependsOnMethod2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
