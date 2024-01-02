@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngdiscussion.DependsOnMethodKeyword">
+      <class name="testngdiscussion.ParametersInTestNG">
         <methods>
-          <include name="profile"/>
-          <include name="login"/>
-          <include name="home"/>
+          <include name="getBrowsername"/>
         </methods>
-      </class> <!-- testngdiscussion.DependsOnMethodKeyword -->
+      </class> <!-- testngdiscussion.ParametersInTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

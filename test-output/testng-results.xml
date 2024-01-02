@@ -1,25 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-01T09:27:06 IST" name="Suite" finished-at="2024-01-01T09:27:07 IST" duration-ms="137">
+  <suite started-at="2024-01-02T09:16:39 IST" name="Suite" finished-at="2024-01-02T09:16:57 IST" duration-ms="18287">
     <groups>
     </groups>
-    <test started-at="2024-01-01T09:27:06 IST" name="Test" finished-at="2024-01-01T09:27:07 IST" duration-ms="137">
-      <class name="testngdiscussion.IncludeAndExcludeTestCaseFromClass">
-        <test-method signature="home()[pri:0, instance:testngdiscussion.IncludeAndExcludeTestCaseFromClass@156b88f5]" started-at="2024-01-01T09:27:07 IST" name="home" finished-at="2024-01-01T09:27:07 IST" duration-ms="15" status="PASS">
+    <test started-at="2024-01-02T09:16:39 IST" name="ChromeTest" finished-at="2024-01-02T09:16:47 IST" duration-ms="7979">
+      <class name="testngdiscussion.ParametersInTestNG">
+        <test-method signature="getBrowsername(java.lang.String)[pri:1, instance:testngdiscussion.ParametersInTestNG@53fdffa1]" started-at="2024-01-02T09:16:39 IST" name="getBrowsername" finished-at="2024-01-02T09:16:39 IST" duration-ms="27" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- home -->
-        <test-method signature="logout()[pri:0, instance:testngdiscussion.IncludeAndExcludeTestCaseFromClass@156b88f5]" started-at="2024-01-01T09:27:07 IST" name="logout" finished-at="2024-01-01T09:27:07 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- getBrowsername -->
+        <test-method signature="getServerAndBrowser(java.lang.String,java.lang.String)[pri:2, instance:testngdiscussion.ParametersInTestNG@53fdffa1]" started-at="2024-01-02T09:16:39 IST" name="getServerAndBrowser" finished-at="2024-01-02T09:16:47 IST" duration-ms="7714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method signature="profile()[pri:0, instance:testngdiscussion.IncludeAndExcludeTestCaseFromClass@156b88f5]" started-at="2024-01-01T09:27:07 IST" name="profile" finished-at="2024-01-01T09:27:07 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- getServerAndBrowser -->
+        <test-method signature="getProjectAndBrowserName(java.lang.String,java.lang.String)[pri:3, instance:testngdiscussion.ParametersInTestNG@53fdffa1]" started-at="2024-01-02T09:16:47 IST" name="getProjectAndBrowserName" finished-at="2024-01-02T09:16:47 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9SeptAutomation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- profile -->
-      </class> <!-- testngdiscussion.IncludeAndExcludeTestCaseFromClass -->
-    </test> <!-- Test -->
+        </test-method> <!-- getProjectAndBrowserName -->
+      </class> <!-- testngdiscussion.ParametersInTestNG -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2024-01-02T09:16:47 IST" name="FireFoxTest" finished-at="2024-01-02T09:16:57 IST" duration-ms="10155">
+      <class name="testngdiscussion.ParametersInTestNG">
+        <test-method signature="getBrowsername(java.lang.String)[pri:1, instance:testngdiscussion.ParametersInTestNG@55634720]" started-at="2024-01-02T09:16:47 IST" name="getBrowsername" finished-at="2024-01-02T09:16:47 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowsername -->
+        <test-method signature="getServerAndBrowser(java.lang.String,java.lang.String)[pri:2, instance:testngdiscussion.ParametersInTestNG@55634720]" started-at="2024-01-02T09:16:47 IST" name="getServerAndBrowser" finished-at="2024-01-02T09:16:57 IST" duration-ms="10113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getServerAndBrowser -->
+        <test-method signature="getProjectAndBrowserName(java.lang.String,java.lang.String)[pri:3, instance:testngdiscussion.ParametersInTestNG@55634720]" started-at="2024-01-02T09:16:57 IST" name="getProjectAndBrowserName" finished-at="2024-01-02T09:16:57 IST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9SeptAutomation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProjectAndBrowserName -->
+      </class> <!-- testngdiscussion.ParametersInTestNG -->
+    </test> <!-- FireFoxTest -->
   </suite> <!-- Suite -->
 </testng-results>
