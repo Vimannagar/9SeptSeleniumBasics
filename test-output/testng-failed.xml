@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngdiscussion.ParametersInTestNG">
+      <class name="testngdiscussion.HardAssertInTestNG">
         <methods>
-          <include name="getBrowsername"/>
+          <include name="testCase1"/>
+          <include name="testCase4"/>
         </methods>
-      </class> <!-- testngdiscussion.ParametersInTestNG -->
+      </class> <!-- testngdiscussion.HardAssertInTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
