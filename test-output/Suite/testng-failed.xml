@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="testngdiscussion.ListenersInTestNG"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testngdiscussion.DependsOnMethod2">
+      <class name="testngdiscussion.TestCasesForListners">
         <methods>
-          <include name="validateTitleOfPage"/>
+          <include name="testCase1"/>
         </methods>
-      </class> <!-- testngdiscussion.DependsOnMethod2 -->
-      <class name="testngdiscussion.DependsOnMethodKeyword">
-        <methods>
-          <include name="profile"/>
-          <include name="login"/>
-          <include name="home"/>
-        </methods>
-      </class> <!-- testngdiscussion.DependsOnMethodKeyword -->
+      </class> <!-- testngdiscussion.TestCasesForListners -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
