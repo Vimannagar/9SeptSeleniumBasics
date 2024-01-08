@@ -1,10 +1,14 @@
 package testngdiscussion;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class ListenersInTestNG  implements ITestListener {
+import utility.ScreenshotWithMethod;
+
+public class ListenersInTestNG extends TestNGListernsWithSelenium  implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -13,17 +17,32 @@ public class ListenersInTestNG  implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("Test case passed");
+		String nameOfTestCase = result.getName();
+		
+		System.out.println(nameOfTestCase+" Test case passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		System.out.println("Test case failed");
+		String nameOfTestCase = result.getName();
+		
+		System.out.println(nameOfTestCase+" Test case failed");
+		
+		ScreenshotWithMethod sc = new ScreenshotWithMethod();
+		
+		try {
+			sc.captureScreenshot(driver, result.getName());
+		} catch (IOException e) {
+			System.out.println("Exception arrived while taking the screenshot");
+		}
+		
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		System.out.println("Test case skipped");
+		
+		String nameofTestcase = result.getName(); 
+		System.out.println(nameofTestcase+" Test case skipped");
 	}
 
 	@Override

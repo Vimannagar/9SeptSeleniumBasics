@@ -6,11 +6,11 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testngdiscussion.TestCasesForListners">
+      <class name="testngdiscussion.TestNGListernsWithSelenium">
         <methods>
-          <include name="testCase1"/>
+          <include name="clickOnSamsungPhone"/>
         </methods>
-      </class> <!-- testngdiscussion.TestCasesForListners -->
+      </class> <!-- testngdiscussion.TestNGListernsWithSelenium -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
