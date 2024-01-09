@@ -23,8 +23,29 @@ public class HandlingWebtable {
 		List<WebElement> numberOfrows = driver.findElements(By.xpath("//*[@class='dataTable']//tbody//tr"));
 		
 		int totalnumberofrows = numberOfrows.size();
+		
 		System.out.println(totalnumberofrows);
 		
+	List<WebElement> allValues = driver.findElements(By.xpath("//*[@class='dataTable']//tbody//tr//td"));
+		
+	int i = 1;
+	for(WebElement value :allValues)
+	{
+		String textValue = value.getText();
+		
+		System.out.print(textValue+" ");
+		
+		i++;
+		
+		if(i==5)
+		{
+			System.out.println();
+			i =1;
+		}	
+	}
+	
+	
+	
 	}
 
 }
