@@ -3,11 +3,22 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="pompage.RegisterUser2">
+      <class name="testclasses.LoginTest">
         <methods>
-          <include name="enterLastName"/>
+          <include name="initBrowser"/>
+          <include name="loginToApp"/>
+          <include name="createObject"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- pompage.RegisterUser2 -->
+      </class> <!-- testclasses.LoginTest -->
+      <class name="testclasses.RegisterTest">
+        <methods>
+          <include name="navToLoginPage"/>
+          <include name="initBrowser"/>
+          <include name="createObject"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testclasses.RegisterTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
