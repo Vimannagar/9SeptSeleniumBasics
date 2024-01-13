@@ -11,14 +11,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- testclasses.LoginTest -->
-      <class name="testclasses.RegisterTest">
-        <methods>
-          <include name="navToLoginPage"/>
-          <include name="initBrowser"/>
-          <include name="createObject"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testclasses.RegisterTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -2,42 +2,42 @@
 <testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-11T09:20:20 IST" name="Suite" finished-at="2024-01-11T09:20:25 IST" duration-ms="5217">
+  <suite started-at="2024-01-13T09:29:19 IST" name="Suite" finished-at="2024-01-13T09:29:25 IST" duration-ms="5956">
     <groups>
     </groups>
-    <test started-at="2024-01-11T09:20:20 IST" name="Test" finished-at="2024-01-11T09:20:25 IST" duration-ms="5217">
+    <test started-at="2024-01-13T09:29:19 IST" name="Test" finished-at="2024-01-13T09:29:25 IST" duration-ms="5956">
       <class name="testclasses.LoginTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.LoginTest@12aba8be]" started-at="2024-01-11T09:20:25 IST" name="createObject" finished-at="2024-01-11T09:20:25 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.LoginTest@12aba8be]" started-at="2024-01-13T09:29:24 IST" name="createObject" finished-at="2024-01-13T09:29:24 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="validateTitle()[pri:3, instance:testclasses.LoginTest@12aba8be]" started-at="2024-01-11T09:20:25 IST" name="validateTitle" finished-at="2024-01-11T09:20:25 IST" duration-ms="59" status="PASS">
+        <test-method signature="validateTitle()[pri:3, instance:testclasses.LoginTest@12aba8be]" started-at="2024-01-13T09:29:24 IST" name="validateTitle" finished-at="2024-01-13T09:29:24 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitle -->
-        <test-method signature="loginToApp()[pri:4, instance:testclasses.LoginTest@12aba8be]" started-at="2024-01-11T09:20:25 IST" name="loginToApp" finished-at="2024-01-11T09:20:25 IST" duration-ms="643" status="PASS">
+        <test-method signature="loginToApp()[pri:4, instance:testclasses.LoginTest@12aba8be]" started-at="2024-01-13T09:29:24 IST" name="loginToApp" finished-at="2024-01-13T09:29:25 IST" duration-ms="748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
       </class> <!-- testclasses.LoginTest -->
       <class name="testclasses.RegisterTest">
-        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-11T09:20:15 IST" name="initBrowser" finished-at="2024-01-11T09:20:20 IST" duration-ms="5609" status="PASS">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-13T09:29:13 IST" name="initBrowser" finished-at="2024-01-13T09:29:19 IST" duration-ms="6070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-11T09:20:20 IST" name="createObject" finished-at="2024-01-11T09:20:20 IST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-13T09:29:19 IST" name="createObject" finished-at="2024-01-13T09:29:20 IST" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="registerUser()[pri:1, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-11T09:20:20 IST" name="registerUser" finished-at="2024-01-11T09:20:24 IST" duration-ms="3944" status="PASS">
+        <test-method signature="registerUser()[pri:1, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-13T09:29:20 IST" name="registerUser" finished-at="2024-01-13T09:29:24 IST" duration-ms="4311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUser -->
-        <test-method signature="navToLoginPage()[pri:2, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-11T09:20:24 IST" name="navToLoginPage" finished-at="2024-01-11T09:20:25 IST" duration-ms="280" status="PASS">
+        <test-method signature="navToLoginPage()[pri:2, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-13T09:29:24 IST" name="navToLoginPage" finished-at="2024-01-13T09:29:24 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navToLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-11T09:20:26 IST" name="tearDown" finished-at="2024-01-11T09:20:26 IST" duration-ms="620" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-13T09:29:25 IST" name="tearDown" finished-at="2024-01-13T09:29:26 IST" duration-ms="849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

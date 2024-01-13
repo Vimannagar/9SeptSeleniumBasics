@@ -2,6 +2,7 @@ package pompage;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,15 +10,17 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class RegisterUser {
-	
-	
 	WebDriver driver;
+	
+
+	
+	By firstname  = By.xpath("//*[@id='firstName']");
 	
 	@FindBy(xpath = "//*[text()='Register']")
 	WebElement registerbutton;
 	
-	@FindBy(xpath = "//*[@id='firstName']")
-	WebElement firstname;
+//	@FindBy(xpath = "//*[@id='firstName']")
+//	WebElement firstname;
 	
 	@FindBy(xpath = "//*[@id='lastName']")
 	WebElement lastname;
@@ -64,11 +67,14 @@ public class RegisterUser {
 	
 	public void enteringDetails()
 	{
-		firstname.sendKeys("SeptUser");
-		lastname.sendKeys("Morningbatch");
-		useremail.sendKeys("kjfhksdfdks@gmail.com");
-		phonenumber.sendKeys("9988776655");
+		WebElement name = driver.findElement(firstname);
 		
+		name.sendKeys("dgfjd");
+//		firstname.sendKeys("SeptUser");
+		lastname.sendKeys("Morningbatch");
+		useremail.sendKeys("yewrieuwyr@gmail.com");
+		phonenumber.sendKeys("9988776655");
+	
 		Select selOccupation = new Select(occupationDropdown);
 		
 		selOccupation.selectByVisibleText("Engineer");
