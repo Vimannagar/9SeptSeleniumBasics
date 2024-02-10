@@ -11,9 +11,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class RegisterUser {
 	WebDriver driver;
-	
-
-	
 	By firstname  = By.xpath("//*[@id='firstName']");
 	
 	@FindBy(xpath = "//*[text()='Register']")
@@ -72,7 +69,7 @@ public class RegisterUser {
 		name.sendKeys("dgfjd");
 //		firstname.sendKeys("SeptUser");
 		lastname.sendKeys("Morningbatch");
-		useremail.sendKeys("yewrieuwyr@gmail.com");
+		useremail.sendKeys("hfjkdshksd@gmail.com");
 		phonenumber.sendKeys("9988776655");
 	
 		Select selOccupation = new Select(occupationDropdown);

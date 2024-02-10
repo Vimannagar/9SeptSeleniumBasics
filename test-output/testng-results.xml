@@ -1,47 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-13T09:29:19 IST" name="Suite" finished-at="2024-01-13T09:29:25 IST" duration-ms="5956">
+  <suite started-at="2024-02-10T08:49:44 IST" name="Failed suite [Failed suite [Default suite]]" finished-at="2024-02-10T08:49:44 IST" duration-ms="677">
     <groups>
     </groups>
-    <test started-at="2024-01-13T09:29:19 IST" name="Test" finished-at="2024-01-13T09:29:25 IST" duration-ms="5956">
-      <class name="testclasses.LoginTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.LoginTest@12aba8be]" started-at="2024-01-13T09:29:24 IST" name="createObject" finished-at="2024-01-13T09:29:24 IST" duration-ms="6" status="PASS">
+    <test started-at="2024-02-10T08:49:44 IST" name="Default test(failed)(failed)" finished-at="2024-02-10T08:49:44 IST" duration-ms="677">
+      <class name="testngdiscussion.FailedTestCaseExecution">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testngdiscussion.FailedTestCaseExecution@66f57048]" started-at="2024-02-10T08:49:28 IST" name="launchBrowser" finished-at="2024-02-10T08:49:44 IST" duration-ms="16015" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createObject -->
-        <test-method signature="validateTitle()[pri:3, instance:testclasses.LoginTest@12aba8be]" started-at="2024-01-13T09:29:24 IST" name="validateTitle" finished-at="2024-01-13T09:29:24 IST" duration-ms="33" status="PASS">
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validateCartICon()[pri:1, instance:testngdiscussion.FailedTestCaseExecution@66f57048]" started-at="2024-02-10T08:49:44 IST" name="validateCartICon" finished-at="2024-02-10T08:49:44 IST" duration-ms="502" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='nav-cart123']"}
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8255aa0b7be491cbec60ab2c744cc37f, findElement {using=xpath, value=//*[@id='nav-cart123']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56973}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56973/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8255aa0b7be491cbec60ab2c744cc37f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='nav-cart123']"}
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8255aa0b7be491cbec60ab2c744cc37f, findElement {using=xpath, value=//*[@id='nav-cart123']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56973}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56973/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8255aa0b7be491cbec60ab2c744cc37f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at testngdiscussion.FailedTestCaseExecution.validateCartICon(FailedTestCaseExecution.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateTitle -->
-        <test-method signature="loginToApp()[pri:4, instance:testclasses.LoginTest@12aba8be]" started-at="2024-01-13T09:29:24 IST" name="loginToApp" finished-at="2024-01-13T09:29:25 IST" duration-ms="748" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-      </class> <!-- testclasses.LoginTest -->
-      <class name="testclasses.RegisterTest">
-        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-13T09:29:13 IST" name="initBrowser" finished-at="2024-01-13T09:29:19 IST" duration-ms="6070" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-13T09:29:19 IST" name="createObject" finished-at="2024-01-13T09:29:20 IST" duration-ms="251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createObject -->
-        <test-method signature="registerUser()[pri:1, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-13T09:29:20 IST" name="registerUser" finished-at="2024-01-13T09:29:24 IST" duration-ms="4311" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerUser -->
-        <test-method signature="navToLoginPage()[pri:2, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-13T09:29:24 IST" name="navToLoginPage" finished-at="2024-01-13T09:29:24 IST" duration-ms="295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navToLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclasses.RegisterTest@66f57048]" started-at="2024-01-13T09:29:25 IST" name="tearDown" finished-at="2024-01-13T09:29:26 IST" duration-ms="849" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testclasses.RegisterTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- validateCartICon -->
+      </class> <!-- testngdiscussion.FailedTestCaseExecution -->
+    </test> <!-- Default test(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [Default suite]] -->
 </testng-results>
